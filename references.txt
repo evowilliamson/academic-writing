@@ -1,2 +1,31 @@
-link                                                title                           authors
-http://www.jot.fm/issues/issue_2008_03/article4/	Context-oriented Programming	Robert Hirschfeld, Oscar Nierstrasz, Pascal Costanza
+http://www.jot.fm/issues/issue_2008_03/article4/    
+Context-oriented Programming    
+Robert Hirschfeld, Oscar Nierstrasz, Pascal Costanza
+not so good as a reference, but good for understanding?
+
+https://www.researchgate.net/profile/Kim_Mens/publication/301349908_A_Context-Oriented_Software_Architecture/links/575eeb6808aed884621b8965/A-Context-Oriented-Software-Architecture.pdf
+A Context-Oriented Software Architecture
+Kim Mens, Nicolas Cardozo, Benoit Duhoux
+not so good as a reference, but good for understanding?
+
+https://www.hpi.uni-potsdam.de/hirschfeld/publications/media/AppeltauerHirschfeld_2012_DeclarativeLayerCompositionInFrameworkBasedEnvironments_AcmDL.pdf
+Declarative Layer Composition in Framework-based Environments
+Malte Appeltauer, Robert Hirschfeld
+
+https://pdfs.semanticscholar.org/24e0/dd7af8abe17a81448658170190047ea540eb.pdf
+Language Constructs for Context-oriented Programming, an Overview of ContextL
+Pascal Costanza, Robert Hirschfeld
+[] P. Costanza and R. Hirschfeld. Language Constructs for Context-oriented Programming - An Overview of ContextL. In R. Wuyts, editor, Proceedings of the 2005 Dynamic Languages Symposium. ACM Press, Oct. 2005
+
+https://www.hpi.uni-potsdam.de/hirschfeld/publications/media/HirschfeldCostanzaHaupt_2007_AnIntroductionToContextOrientedProgrammingWithContextS_AuthorsVersionLNCS.pdf
+An Introduction to Context-Oriented Programming with ContextS
+Robert Hirschfeld, Pascal Costanza, and Michael Haupt
+not so good as a reference, but good for understanding ?
+
+http://www.sciencedirect.com.ezproxy.elib10.ub.unimaas.nl/science/article/pii/S016412121200074X
+Context-oriented programming: A software engineering perspective
+Guido Salvaneschi, Carlo Ghezzi, Matteo Pradella 
+
+http://dl.acm.org.ezproxy.elib10.ub.unimaas.nl/citation.cfm?id=940926
+Context-Oriented Programming
+Roger Keays, Andry Rakotonirainy
