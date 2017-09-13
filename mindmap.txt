@@ -1,0 +1,10 @@
+why
+1. p1
+
+problem
+1. p1
+
+what
+1. p2 (what is COP)
+1. p2 (what is a context)
+1. p2-p3-p4 (dependent behavior)

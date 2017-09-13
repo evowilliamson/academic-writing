@@ -1,0 +1,4 @@
+what is COP ?
+Where can we use it for ?
+Examples of COP languages
+An exampe of a COP program
