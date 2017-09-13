@@ -1,31 +1,82 @@
+1. 
 http://www.jot.fm/issues/issue_2008_03/article4/    
 Context-oriented Programming    
 Robert Hirschfeld, Oscar Nierstrasz, Pascal Costanza
 not so good as a reference, but good for understanding?
+And good as a lead because not cited a lot and difficult to find hahhaa
 
+2.
 https://www.researchgate.net/profile/Kim_Mens/publication/301349908_A_Context-Oriented_Software_Architecture/links/575eeb6808aed884621b8965/A-Context-Oriented-Software-Architecture.pdf
+http://dl.acm.org/citation.cfm?id=2951971
 A Context-Oriented Software Architecture
 Kim Mens, Nicolas Cardozo, Benoit Duhoux
 not so good as a reference, but good for understanding?
+not cited!!! serves as a lead ?
 
-https://www.hpi.uni-potsdam.de/hirschfeld/publications/media/AppeltauerHirschfeld_2012_DeclarativeLayerCompositionInFrameworkBasedEnvironments_AcmDL.pdf
+3.
+http://dl.acm.org.ezproxy.elib10.ub.unimaas.nl/citation.cfm?id=2307437
 Declarative Layer Composition in Framework-based Environments
 Malte Appeltauer, Robert Hirschfeld
+Only cited once! more about frameworks....
 
+4.
 https://pdfs.semanticscholar.org/24e0/dd7af8abe17a81448658170190047ea540eb.pdf
+http://dl.acm.org/citation.cfm?id=1146842
 Language Constructs for Context-oriented Programming, an Overview of ContextL
 Pascal Costanza, Robert Hirschfeld
 [] P. Costanza and R. Hirschfeld. Language Constructs for Context-oriented Programming - An Overview of ContextL. In R. Wuyts, editor, Proceedings of the 2005 Dynamic Languages Symposium. ACM Press, Oct. 2005
+cited a lot! Good as a reference!
 
+5.
 https://www.hpi.uni-potsdam.de/hirschfeld/publications/media/HirschfeldCostanzaHaupt_2007_AnIntroductionToContextOrientedProgrammingWithContextS_AuthorsVersionLNCS.pdf
+http://dl.acm.org/citation.cfm?id=1462629&CFID=808792112&CFTOKEN=64685457
 An Introduction to Context-Oriented Programming with ContextS
 Robert Hirschfeld, Pascal Costanza, and Michael Haupt
 not so good as a reference, but good for understanding ?
+cited 17 times! Good as a reference!
 
+6.
 http://www.sciencedirect.com.ezproxy.elib10.ub.unimaas.nl/science/article/pii/S016412121200074X
+http://p9003-sfx.unimaas.nl.ezproxy.elib10.ub.unimaas.nl/sfx_local?ctx_ver=Z39.88-2004&ctx_enc=info%3Aofi%2Fenc%3AUTF-8&rfr_id=info%3Asid%2Fsummon.serialssolutions.com&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&rft.genre=article&rft.atitle=Context-oriented+programming%3A+A+software+engineering+perspective&rft.jtitle=JOURNAL+OF+SYSTEMS+AND+SOFTWARE&rft.au=Salvaneschi%2C+G&rft.au=Ghezzi%2C+C&rft.au=Pradella%2C+M&rft.date=2012-08-01&rft.pub=ELSEVIER+SCIENCE+INC&rft.issn=0164-1212&rft.eissn=1873-1228&rft.volume=85&rft.issue=8&rft.spage=1801&rft.epage=1817&rft_id=info:doi/10.1016%2Fj.jss.2012.03.024&rft.externalDBID=n%2Fa&rft.externalDocID=000305109300009&paramdict=nl-NL
 Context-oriented programming: A software engineering perspective
 Guido Salvaneschi, Carlo Ghezzi, Matteo Pradella 
 
+7.
 http://dl.acm.org.ezproxy.elib10.ub.unimaas.nl/citation.cfm?id=940926
 Context-Oriented Programming
 Roger Keays, Andry Rakotonirainy
+
+to be printed:
+
+8.
+http://dl.acm.org.ezproxy.elib10.ub.unimaas.nl/citation.cfm?id=2579816&CFID=984255076&CFTOKEN=26238400
+Context-Oriented Software Engineering: A Modularity Vision
+Tetsuo Kamina, Tomoyuki Aotani, Hidehiko Masuhara
+
+9.
+http://www.infosys.tuwien.ac.at/staff/ssehic/papers/SAC14-Sehic.pdf
+http://dl.acm.org/citation.cfm?id=2555015&CFID=808792112&CFTOKEN=64685457
+Entity-Adaptation: A Programming Model for Development of Context-Aware Applications
+Sanjin Sehic, Stefan Nastic, Michael Vögler, Fei Li, and Schahram Dustdar
+not cited, but good be good as a lead!
+
+10.
+https://released.info.ucl.ac.be/pmwiki/uploads/Publications/OrchestratingContext-AwareSystemsADesignPerspective/2009-cop.pdf
+http://dl.acm.org/citation.cfm?id=1595771&CFID=808792112&CFTOKEN=64685457
+Orchestrating context-aware systems: a design perspective
+Alfredo Cádiz, Sebastián González, Kim Mens
+cited 2 times
+
+11. 
+http://soft.vub.ac.be/cop09/papers/a5-appeltauer.pdf
+http://dl.acm.org/citation.cfm?id=1562117
+Improving the development of context-dependent Java applications with ContextJ
+Malte Appeltauer, Robert Hirschfeld, Hidehiko Masuhara
+Very good, cited 17 times, very well written, easy to understand
+
+12. 
+http://www.p-cos.net/documents/contextl-soa.pdf
+http://dl.acm.org/citation.cfm?id=1529970&CFID=808792112&CFTOKEN=64685457
+Context-oriented Programming in ContextL
+Pascal Costanza
+glood explanantion... cited only 2 times
