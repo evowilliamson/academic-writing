@@ -2,8 +2,7 @@
 http://www.jot.fm/issues/issue_2008_03/article4/    
 Context-oriented Programming    
 Robert Hirschfeld, Oscar Nierstrasz, Pascal Costanza
-not so good as a reference, but good for understanding?
-And good as a lead because not cited a lot and difficult to find hahhaa
+Good as a reference! cited 400 times
 
 2.
 https://www.researchgate.net/profile/Kim_Mens/publication/301349908_A_Context-Oriented_Software_Architecture/links/575eeb6808aed884621b8965/A-Context-Oriented-Software-Architecture.pdf

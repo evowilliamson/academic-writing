@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{bowman:reasoning}
 M.~Bowman, S.~K. Debray, and L.~L. Peterson.
@@ -17,10 +17,23 @@ M.~Clark.
 \newblock In {\em TeX90 Conference Proceedings}, pages 84--89. TeX Users Group,
   March 1991.
 
+\bibitem{kiczalesetallaop}
+A.~M. Gregor~Kiczales, John~Lamping.
+\newblock Aspect-oriented programming.
+\newblock In {\em 11th European Conference on object-Oriented Programming,
+  volume 1241}, pages 220--242. g, 1997.
+
 \bibitem{herlihy:methodology}
 M.~Herlihy.
 \newblock A methodology for implementing highly concurrent data objects.
 \newblock {\em ACM Trans. Program. Lang. Syst.}, 15(5):745--770, November 1993.
+
+\bibitem{Keays:2003:CP:940923.940926}
+R.~Keays and A.~Rakotonirainy.
+\newblock Context-oriented programming.
+\newblock In {\em Proceedings of the 3rd ACM International Workshop on Data
+  Engineering for Wireless and Mobile Access}, MobiDe '03, pages 9--16, New
+  York, NY, USA, 2003. ACM.
 
 \bibitem{Lamport:LaTeX}
 L.~Lamport.
