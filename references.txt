@@ -45,6 +45,8 @@ Guido Salvaneschi, Carlo Ghezzi, Matteo Pradella
 http://dl.acm.org.ezproxy.elib10.ub.unimaas.nl/citation.cfm?id=940926
 Context-Oriented Programming
 Roger Keays, Andry Rakotonirainy
+Cited 17 times
+Good explanation of basic aspects
 
 to be printed:
 

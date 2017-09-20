@@ -54,15 +54,111 @@ Ivo Willemsen\\
 
 \maketitle
 \begin{abstract}
-The last decade, use cases have emerged that emphasise the need to cater for different behaviour depending on situation and context changes. Examples are: Pervasive systems \cite{pervasivecomputing}, IoT applications \cite{iotcomputing} and highly personalised business applications. Conventional programming languages offer constructs to implement context-dependent behavior, like  conditional branches using if/switch statements, but they often result in cluttered code and uses of those constructs seriously damage the modularity of the applications. In the early 2000s, a new programming paradigm emerged, called Context-Oriented Programming which targeted to mitigate the aforementioned problems by incorporating context as as part of the programming language, like variables, classes, and functions constitute the constructs of many contemporary languages.
+The last decade, use cases have emerged that emphasise the need to cater 
+for different behaviour depending on situation and context changes. Examples are: 
+Pervasive systems \cite{pervasivecomputing} and highly personalised business 
+applications. Conventional programming languages offer constructs to implement
+context-dependent behavior, like  conditional branches using if/switch statements, 
+but they often result in cluttered code and uses of those 
+constructs seriously damage the modularity of the applications. In the early 2000s, 
+a new programming paradigm emerged, called Context-Oriented Programming which targeted 
+to mitigate the aforementioned problems by incorporating context as as part of the 
+programming language, like variables, classes, and functions constitute the constructs 
+of many contemporary languages.
 
-This paper presents an introduction to Context-Oriented Programming, focussing on what Context-Oriented Programming is and explaining the \textit{raison d'etre} of its usage. As additonal reading, examples of Context-Oriented Programming languages are given and some other aspects of these languages are elaborated on.  
+This paper presents an introduction to Context-Oriented Programming, focussing on 
+what Context-Oriented Programming is and explaining the \textit{raison d'etre} of 
+its usage. As additonal reading, examples of Context-Oriented Programming languages 
+are given and some other aspects of these languages are elaborated on.  
 \end{abstract}
 
 \keywords{Context-Oriented Programming, context-aware systems, behavioural variations} 
 
 \section{Introduction}
+Many applications exhibits behaviour that depends on its
+context of use. Here, the meaning of context is broad and can range from obvious
+concepts such as location, time of day, or temperature over more technical
+properties like connectivity, bandwidth, battery level, or energy consumption to
+a user’s subscriptions, preferences, or personalization in general.
+Besides these examples of context that are often associated with the domain of
+ambient computing, the computational context of the program itself, for example
+its control flow or the sets or versions of libraries used, can be an important source
+of information for affecting the behavior of parts of the system.
+Even though context is a central notion in a wide range of application domains,
+there is no direct support of context-dependent behavior from traditional
+programming languages and environments. Here, the expression of variations
+requires developers to repeatedly state conditional dependencies, resulting in
+scattered and tangled code.
+This phenomenon, also known as crosscutting concerns, and some of the
+
+In order to include context-dependent behaviour in programs using most modern languages, 
+one option available is to use the Strategy Design Pattern \cite{strategypattern} 
+to abstract the context-dependent behaviour into separate classes and decide at 
+runtime-level which context-dependent behaviour (strategy) to use. Even worse would 
+be the usage of conditional statements to find out the context in which a certain program is 
+running, and as a result, not adhering to one of the concepts of Object-Oriented Programming: 
+To avoid conditonal statements to determine polymorphic behaviour. Both options are suboptimal 
+as they result in cluttered code that is difficult to reuse and to understand and 
+makes maintenance of the code a very cumbersome activity. 
+
+
+
+
+Context-oriented programming can overcome these problems by 
+by dedicated language constructs for crosscutting concerns
+
+The context-oriented programming (COP) [6, 4] approach
+supports the modularization of crosscutting concerns [11]
+and their control at runtime. In particular, COP focuses on
+a specific type of crosscutting concerns,
+
+Context-oriented programming [8] (COP) addresses the
+development of systems, whose behavior varies depending on
+their context of use. In most cases, a behavioral variation is
+not implemented by a single object; instead, it is distributed
+over a team of collaborating objects. Such distributed
+functionality is denoted as crosscutting concern [10]. The
+modularization and composition of crosscutting concerns
+requires additional language abstractions beyond objectoriented
+programming. COP introduces layers, an encapsulation
+mechanism for crosscutting behavioral variations. A
+layer can be dynamically activated and composed with other
+layers, allowing fine-grained control of an application’s runtime
+behavior
+
+example battery how it affects different parts of an application, wifi, display
+
+The steady convergence towards systems that are aware
+and reactive to their execution environment brings new functional
+and technical challenges that were a non-issue upon
+the time traditional desktop and server systems dominated
+the computing platform spectrum. Thanks to the real-time
+availability of information coming from their physical and
+logical environment, context-aware systems have the potential
+to adapt swiftly to changing running conditions and
+match user needs and expectations more tightly than traditional
+systems.
+
+
+
+
+
+Context-aware systems adapt
+their execution behaviour dynamically to particular
+situations based on contextual information discovered
+from their surrounding execution environment, such as
+weather conditions, localisation information, remaining
+battery power, user actions, system state, and so on
+
+
+
+case definition to be used throughout the paper
+what is a context ?
+what are first-class values
+
+
 The \textit{proceedings} are the records of a conference.
+
 ACM seeks to give these conference by-products a uniform,
 high-quality appearance.  To do this, ACM has some rigid
 requirements for the format of the proceedings documents: there
@@ -359,6 +455,11 @@ some or all of the \texttt{{\char'134}def}s recompilation will
 be, to say the least, problematic.
 
 \section{Conclusions}
+
+Bypassing the need of scattering context-dependent behaviour throughout a program
+is one of the motivations of Context-Oriented Programming. In most modern programming 
+languages, 
+
 This paragraph will end the body of this sample document.
 Remember that you might still have Acknowledgments or
 Appendices; brief samples of these
