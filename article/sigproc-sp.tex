@@ -62,68 +62,33 @@ This paper presents an introduction to Context-Oriented Programming, focussing o
 
 \keywords{Context-Oriented Programming, context-aware systems, behavioural variations} 
 
-\section{Introduction}
+\section{Introduction} \label{introduction}
 Many applications present behaviour that is determined by the context in which it is being used. Examples of different contexts are: Battery level, GPS location, available connectivity protocols (Wifi/3G/4G), speed of the network, user's preferences, etcetera.
 
-In order to include context-dependent behaviour in applications using most modern programming languages, one option available is to use the Strategy Design Pattern \cite{strategypattern} to abstract the context-dependent behaviour into separate classes and decide at runtime-level which context-dependent behaviour (strategy) to use. Even worse would be the usage of conditional statements to find out the context in which a certain program is running, and as a result, not adhering to one of the concepts of Object-Oriented Programming: To avoid conditonal statements to determine polymorphic behaviour. Both options are suboptimal as they result in cluttered code which is difficult to reuse and to understand and makes maintenance of the code a very cumbersome activity. 
+For example, battery level of a tablet or a smartphone on which an application (Operating System in this case) runs is a context, which probably impacts many behavioural aspects of that applications. It will not only have affect on the brightness of the screen, but it might also influence the way the Operating System prioritises running threads, and perhaps result in the preventive hibernation of the system.
 
-For example, battery level of a tablet or a smartphone on which an application (Operating System in this case) runs is a context, which probably impacts many behavioural aspects of that applications. It will not only have affect on the brightness of the screen, but it might also influece the way the Operating System prioritises running threads, and even result in the preventive hibernation of the system.
+In order to include context-dependent behaviour in applications using most modern programming languages, one option available is to use the Strategy Design Pattern \cite{strategypattern} to abstract the context-dependent behaviour into separate classes and decide at runtime-level which context-dependent behaviour (strategy) to use. Even worse would be the usage of conditional statements to find out the context in which a certain program is running, and as a result, not adhering to one of the concepts of Object-Oriented Programming: To avoid conditonal statements to determine polymorphic behaviour. Both options are suboptimal as they result in cluttered code which is difficult to reuse and to understand and makes maintenance of the code a very cumbersome activity.
 
-So, behavioural variation is not implemented by a sole object, rather it is spread over a group of cooperating objects. It is called a crosscutting concern \cite{kiczalesetallaop} and this is a functionality that is dispersed over several cooperating objects. Plain old Object-Oriented Programming languages don't have constructs that allow for modularization and composition of crosscutting concerns, they lack first-class constructs. A first-class construct \cite{Keays:2003:CP:940923.940926} is a construct which is an element of a language, like a class or a method in Java.
+So, behavioural variation is not implemented by a sole object, rather it is spread over a group of cooperating objects. It is called a crosscutting concern \cite{kiczalesetallaop} and this is a functionality that is dispersed over several cooperating objects. Plain old Object-Oriented Programming languages don't have constructs that allow for modularization and composition of crosscutting concerns, they lack first-class constructs. A first-class construct \cite{Keays:2003:CP:940923.940926} is a construct which is an element of a language, like a class or a method in Java. The lack of first-class constructs in regular Object-Oriented Programming languages to support the development of context-aware applications, leaves the developer of those applications with the need to implement necessary \textit{boiler-plate code}. What is needed, is a type of language that incorporates those constructs; which allow a developer to focus more on the implementation of business use-cases and less on inventing the wheel of "context determination, modularlisation and activation" over and over again. 
 
+Chapter \ref{motivation} will elaborate more on the motivation of the need for a new programming paradigm. Chapter \ref{context} will zoom into the concept of "Context" and dependencies between different contexts. 
 
-requires additional language abstractions beyond objectoriented programming. COP introduces layers, an encapsulation mechanism for crosscutting behavioral variations. A layer can be dynamically activated and composed with other layers, allowing fine-grained control of an application’s runtime behavior
+\section{Motivation}\label{motivation}
 
+\cite{Kamina:2014:CSE:2577080.2579816}
 
+\section{Context}\label{context}
+Context can be defined as any computationally accessible information. Context is derived from three sources: Environment, system and the actors. Contextual information that originates from actors and the environment is information that reaches the system from outside, but the system itself can also generate context. 
 
+A \textit{system} is a set of computational objects, methods, functions that responds with pre-defined behaviour on per-request basis. An \textit{actor} is a person or another system that is directly involved with the system: It determines the order in which use cases are executed by communicating direclty with the system, by clicking on buttons, sending messages, receiving feedback, etcetera. An example of context generated by an actor is the differences in behaviour that originate from the choices made by a user when accessing certain functionalities. Another example is the support of multiple devices (like an smartphone or a desktop computer) that add to the context-dependent behaviour of the system. The \textit{environment} encompasses everthing that lies outside the boundaries of the system, and which is not directly involved in the relationship between the system and the actors.
 
-to cross cutting
+As a result, behaviour variations, changes in response, depend on context that is generated by these three sources. 
 
+ref no. 6 icw ref no 1. 
 
-Even though context is a central notion in a wide range of application domains,
-there is no direct support of context-dependent behavior from traditional
-programming languages and environments. Here, the expression of variations
-requires developers to repeatedly state conditional dependencies, resulting in
-scattered and tangled code.
-This phenomenon, also known as crosscutting concerns, and some of the
-
-
-
-Context-oriented programming can overcome these problems by 
-by dedicated language constructs for crosscutting concerns
-
-Context-oriented programming [8] (COP) addresses the
-development of systems, whose behavior varies depending on
-their context of use. 
-example battery how it affects different parts of an application, wifi, display
-
-The steady convergence towards systems that are aware
-and reactive to their execution environment brings new functional
-and technical challenges that were a non-issue upon
-the time traditional desktop and server systems dominated
-the computing platform spectrum. Thanks to the real-time
-availability of information coming from their physical and
-logical environment, context-aware systems have the potential
-to adapt swiftly to changing running conditions and
-match user needs and expectations more tightly than traditional
-systems.
+\section{Context-Oriented Programming}\label{cop}
 
 
-
-
-
-Context-aware systems adapt
-their execution behaviour dynamically to particular
-situations based on contextual information discovered
-from their surrounding execution environment, such as
-weather conditions, localisation information, remaining
-battery power, user actions, system state, and so on
-
-
-
-case definition to be used throughout the paper
-what is a context ?
-what are first-class values
 
 
 The \textit{proceedings} are the records of a conference.
@@ -458,7 +423,7 @@ and the \textbf{.cls} and \textbf{.tex} files that it describes.
 % You must have a proper ".bib" file
 %  and remember to run:
 % latex bibtex latex latex
-% to resolve all references
+% to resolve all \ref{introduction}nces
 %
 % ACM needs 'a single self-contained file'!
 %
