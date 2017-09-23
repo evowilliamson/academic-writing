@@ -1,32 +1,11 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{1}
 
-\bibitem{bowman:reasoning}
-M.~Bowman, S.~K. Debray, and L.~L. Peterson.
-\newblock Reasoning about naming systems.
-\newblock {\em ACM Trans. Program. Lang. Syst.}, 15(5):795--825, November 1993.
-
-\bibitem{braams:babel}
-J.~Braams.
-\newblock Babel, a multilingual style-option system for use with latex's
-  standard document styles.
-\newblock {\em TUGboat}, 12(2):291--301, June 1991.
-
-\bibitem{clark:pct}
-M.~Clark.
-\newblock Post congress tristesse.
-\newblock In {\em TeX90 Conference Proceedings}, pages 84--89. TeX Users Group,
-  March 1991.
-
-\bibitem{herlihy:methodology}
-M.~Herlihy.
-\newblock A methodology for implementing highly concurrent data objects.
-\newblock {\em ACM Trans. Program. Lang. Syst.}, 15(5):745--770, November 1993.
-
-\bibitem{Kamina:2014:CSE:2577080.2579816}
-T.~Kamina, T.~Aotani, H.~Masuhara, and T.~Tamai.
-\newblock Context-oriented software engineering: A modularity vision.
-\newblock In {\em Proceedings of the 13th International Conference on
-  Modularity}, MODULARITY '14, pages 85--98, New York, NY, USA, 2014. ACM.
+\bibitem{Abowd:1999:TBU:647985.743843}
+G.~D. Abowd, A.~K. Dey, P.~J. Brown, N.~Davies, M.~Smith, and P.~Steggles.
+\newblock Towards a better understanding of context and context-awareness.
+\newblock In {\em Proceedings of the 1st International Symposium on Handheld
+  and Ubiquitous Computing}, HUC '99, pages 304--307, London, UK, UK, 1999.
+  Springer-Verlag.
 
 \bibitem{Keays:2003:CP:940923.940926}
 R.~Keays and A.~Rakotonirainy.
@@ -40,16 +19,6 @@ G.~Kiczales, J.~Lamping, A.~Mendhekar, C.~Maeda, C.~Lopes, J.-M. Loingtier, and
   J.~Irwin.
 \newblock {\em Aspect-oriented programming}, pages 220--242.
 \newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 1997.
-
-\bibitem{Lamport:LaTeX}
-L.~Lamport.
-\newblock {\em LaTeX User's Guide and Document Reference Manual}.
-\newblock Addison-Wesley Publishing Company, Reading, Massachusetts, 1986.
-
-\bibitem{salas:calculus}
-S.~Salas and E.~Hille.
-\newblock {\em Calculus: One and Several Variable}.
-\newblock John Wiley and Sons, New York, 1978.
 
 \bibitem{strategypattern}
 Wikipedia.
