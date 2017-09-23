@@ -7,6 +7,18 @@ G.~D. Abowd, A.~K. Dey, P.~J. Brown, N.~Davies, M.~Smith, and P.~Steggles.
   and Ubiquitous Computing}, HUC '99, pages 304--307, London, UK, UK, 1999.
   Springer-Verlag.
 
+\bibitem{Appeltauer:2009:CCP:1562112.1562118}
+M.~Appeltauer, R.~Hirschfeld, M.~Haupt, J.~Lincke, and M.~Perscheid.
+\newblock A comparison of context-oriented programming languages.
+\newblock In {\em International Workshop on Context-Oriented Programming}, COP
+  '09, pages 6:1--6:6, New York, NY, USA, 2009. ACM.
+
+\bibitem{Costanza:2008:CPC:1529966.1529970}
+P.~Costanza.
+\newblock Context-oriented programming in contextl: State of the art.
+\newblock In {\em Celebrating the 50th Anniversary of Lisp}, LISP50, pages
+  4:1--4:5, New York, NY, USA, 2008. ACM.
+
 \bibitem{Keays:2003:CP:940923.940926}
 R.~Keays and A.~Rakotonirainy.
 \newblock Context-oriented programming.
