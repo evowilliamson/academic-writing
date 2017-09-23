@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.22)  23 SEP 2017 16:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.22)  23 SEP 2017 16:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -183,35 +183,43 @@ LaTeX Font Info:    Try loading font information for T1+aer on input line 105.
 
 (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aer.fd
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
-))) (./sigproc-sp.aux)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count109
+\float@exts=\toks35
+\float@box=\box30
+\@float@everytoks=\toks36
+\@floatcapt=\box31
+) (./sigproc-sp.aux)
 \openout1 = `sigproc-sp.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
-LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count109
+\scratchcounter=\count110
 \scratchdimen=\dimen123
-\scratchbox=\box30
-\nofMPsegments=\count110
-\nofMParguments=\count111
-\everyMPshowfont=\toks35
-\MPscratchCnt=\count112
+\scratchbox=\box32
+\nofMPsegments=\count111
+\nofMParguments=\count112
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count113
 \MPscratchDim=\dimen124
-\MPnumerator=\count113
-\makeMPintoPDFobject=\count114
-\everyMPtoPDFconversion=\toks36
+\MPnumerator=\count114
+\makeMPintoPDFobject=\count115
+\everyMPtoPDFconversion=\toks38
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -260,36 +268,36 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 14.
+LaTeX Font Info:    Try loading font information for U+msa on input line 15.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 14.
+LaTeX Font Info:    Try loading font information for U+msb on input line 15.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 14.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 15.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (10.79999pt too wide) in paragraph at lines 14--14
+Overfull \hbox (10.79999pt too wide) in paragraph at lines 15--15
  [][][] 
  []
 
 
-Overfull \hbox (3.20078pt too wide) in paragraph at lines 20--22
+Overfull \hbox (3.20078pt too wide) in paragraph at lines 21--23
 \T1/aer/m/n/9 Pro-gram-ming, fo-cussing on what Context-Oriented Pro-gram-
  []
 
 
 LaTeX Warning: Reference `motivation' on page \thepage  undefined on input line
- 34.
+ 35.
 
 
-Overfull \hbox (3.5885pt too wide) in paragraph at lines 39--40
+Overfull \hbox (3.5885pt too wide) in paragraph at lines 40--41
 \T1/aer/m/n/9 tions that re-sponds with pre-defined be-haviour on per-request
  []
 
@@ -297,44 +305,44 @@ Overfull \hbox (3.5885pt too wide) in paragraph at lines 39--40
 
 
 ]
-Overfull \hbox (6.4774pt too wide) in paragraph at lines 43--43
+Overfull \hbox (6.4774pt too wide) in paragraph at lines 44--44
 []\secfnt CONTEXT-ORIENTED PRO-GRAM-MING 
  []
 
 
-Overfull \hbox (4.23418pt too wide) in paragraph at lines 59--60
+Overfull \hbox (4.23418pt too wide) in paragraph at lines 60--61
 \T1/aer/m/n/9 grained in-for-ma-tion classes like "low", "medium", "high". 
  []
 
 
-Overfull \hbox (1.10522pt too wide) in paragraph at lines 63--64
+Overfull \hbox (1.10522pt too wide) in paragraph at lines 64--65
 \T1/aer/m/n/9 haviour by ex-ploit-ing the avail-able con-structs in the Context
 -
  []
 
 
-Overfull \hbox (4.3526pt too wide) in paragraph at lines 65--66
+Overfull \hbox (4.3526pt too wide) in paragraph at lines 66--67
 \T1/aer/m/n/9 Context-Oriented Pro-gram-ming lan-guages, which groups par-
  []
 
 <pic.png, id=12, 463.7325pt x 450.18187pt>
 File: pic.png Graphic file (type png)
  <use pic.png>
-Package pdftex.def Info: pic.png used on input line 79.
+Package pdftex.def Info: pic.png used on input line 80.
 (pdftex.def)             Requested size: 113.81102pt x 110.48442pt.
  (./sigproc-sp.bbl
-[2]) [3
+[2 <./pic.png (PNG copy)>]) [3
 
- <./pic.png (PNG copy)>] (./sigproc-sp.aux)
+] (./sigproc-sp.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2789 strings out of 493029
- 35177 string characters out of 6136234
- 102301 words of memory out of 5000000
- 6258 multiletter control sequences out of 15000+600000
+ 2851 strings out of 493029
+ 35985 string characters out of 6136234
+ 102678 words of memory out of 5000000
+ 6316 multiletter control sequences out of 15000+600000
  47315 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,10n,28p,1143b,242s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -345,7 +353,7 @@ nts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhv
 r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
-Output written on sigproc-sp.pdf (3 pages, 136065 bytes).
+Output written on sigproc-sp.pdf (3 pages, 136026 bytes).
 PDF statistics:
  44 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream
