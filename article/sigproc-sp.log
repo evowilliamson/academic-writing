@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.22)  24 SEP 2017 14:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.22)  24 SEP 2017 18:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -331,13 +331,13 @@ Overfull \hbox (4.3526pt too wide) in paragraph at lines 73--74
 \T1/aer/m/n/9 Context-Oriented Pro-gram-ming lan-guages, which groups par-
  []
 
-[2] <layers.png, id=15, 647.41875pt x 582.67688pt>
-File: layers.png Graphic file (type png)
- <use layers.png>
-Package pdftex.def Info: layers.png used on input line 85.
-(pdftex.def)             Requested size: 241.84842pt x 217.65865pt.
+[2] <layers2.png, id=15, 715.17188pt x 639.89063pt>
+File: layers2.png Graphic file (type png)
+ <use layers2.png>
+Package pdftex.def Info: layers2.png used on input line 85.
+(pdftex.def)             Requested size: 256.0748pt x 229.12042pt.
 
-Overfull \hbox (8.24841pt too wide) in paragraph at lines 85--86
+Overfull \hbox (16.0748pt too wide) in paragraph at lines 85--86
  [][] 
  []
 
@@ -346,26 +346,26 @@ Underfull \hbox (badness 4391) in paragraph at lines 86--86
 []\T1/aer/bx/n/9 Figure 1: Lay-ers, be-hav-ioral vari-a-tions and
  []
 
-[3 <./layers.png (PNG copy)>]
-<dynamic_activation.png, id=21, 672.26157pt x 360.59718pt>
-File: dynamic_activation.png Graphic file (type png)
+[3 <./layers2.png (PNG copy)>]
+<dynamic_activation2.png, id=21, 715.92468pt x 395.22656pt>
+File: dynamic_activation2.png Graphic file (type png)
 
-<use dynamic_activation.png>
-Package pdftex.def Info: dynamic_activation.png used on input line 112.
-(pdftex.def)             Requested size: 241.84842pt x 129.72684pt.
+<use dynamic_activation2.png>
+Package pdftex.def Info: dynamic_activation2.png used on input line 112.
+(pdftex.def)             Requested size: 241.84842pt x 133.50684pt.
 
-Overfull \hbox (8.24841pt too wide) in paragraph at lines 112--113
+Overfull \hbox (1.84842pt too wide) in paragraph at lines 112--113
  [][] 
  []
 
-<per_object_activation.png, id=22, 654.19406pt x 216.05719pt>
-File: per_object_activation.png Graphic file (type png)
+<per_object_activation2.png, id=22, 709.14937pt x 252.19218pt>
+File: per_object_activation2.png Graphic file (type png)
 
-<use per_object_activation.png>
-Package pdftex.def Info: per_object_activation.png used on input line 129.
-(pdftex.def)             Requested size: 241.84842pt x 79.87396pt.
+<use per_object_activation2.png>
+Package pdftex.def Info: per_object_activation2.png used on input line 129.
+(pdftex.def)             Requested size: 241.84842pt x 86.00587pt.
 
-Overfull \hbox (8.24841pt too wide) in paragraph at lines 129--130
+Overfull \hbox (1.84842pt too wide) in paragraph at lines 129--130
  [][] 
  []
 
@@ -373,13 +373,13 @@ Overfull \hbox (8.24841pt too wide) in paragraph at lines 129--130
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-(./sigproc-sp.bbl [4 <./dynamic_activation.png (PNG copy)> <./per_object_activa
-tion.png (PNG copy)>]) [5
+(./sigproc-sp.bbl [4 <./dynamic_activation2.png (PNG copy)> <./per_object_activ
+ation2.png (PNG copy)>]) [5
 
 ] (./sigproc-sp.aux) ) 
 Here is how much of TeX's memory you used:
  2876 strings out of 493029
- 36655 string characters out of 6136234
+ 36670 string characters out of 6136234
  102800 words of memory out of 5000000
  6338 multiletter control sequences out of 15000+600000
  48451 words of font info for 65 fonts, out of 8000000 for 9000
@@ -393,7 +393,7 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
 s/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sigproc-sp.pdf (5 pages, 298106 bytes).
+Output written on sigproc-sp.pdf (5 pages, 374284 bytes).
 PDF statistics:
  56 PDF objects out of 1000 (max. 8388607)
  37 compressed objects within 1 object stream

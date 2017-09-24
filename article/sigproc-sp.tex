@@ -82,7 +82,7 @@ In figure \ref{fig:layers}, the base behavior of the ClientRepository (with no a
 The get-method is partially redefined in two layers that are defined in the same class by making use of the first-class construct "layer". In case the mobile layer is active, first the base functionality of the get-method will be invoked by the proceed-call. After the proceed-call has retrieved the object, the partial definition will make a call to the DAO object in order to retrieve the account information that is related with the client. Before returning the object to the caller, the partial definition will make sure that the cache is updated with the newly retrieved information. 
 \begin{figure}[H]
 \centering
-\fbox{\includegraphics[width=85mm]{layers.png}}
+\includegraphics[width=90mm]{layers2.png}
 \caption{Layers, behavioral variations and base/partial definition}
 \label{fig:layers}
 \end{figure}
@@ -109,7 +109,7 @@ After the with-block has terminated, the mobileLayer layer is out-of-scope, and 
 
 \begin{figure}[H]
 \centering
-\fbox{\includegraphics[width=85mm]{dynamic_activation.png}}
+\includegraphics[width=85mm]{dynamic_activation2.png}
 \caption{Dynamically scoped activation}
 \label{fig:dynamically_scoped_activation}
 \end{figure}
@@ -126,7 +126,7 @@ This type of activation allows configuration of active layers to be performed on
 
 \begin{figure}[H]
 \centering
-\fbox{\includegraphics[width=85mm]{per_object_activation.png}}
+\includegraphics[width=85mm]{per_object_activation2.png}
 \caption{Per-object activation}
 \label{fig:per_object_activation}
 \end{figure}
