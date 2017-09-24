@@ -52,6 +52,13 @@ G.~Kiczales, J.~Lamping, A.~Mendhekar, C.~Maeda, C.~Lopes, J.-M. Loingtier, and
 \newblock {\em Aspect-oriented programming}, pages 220--242.
 \newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 1997.
 
+\bibitem{Mens:2016:CSA:2951965.2951971}
+K.~Mens, N.~Cardozo, and B.~Duhoux.
+\newblock A context-oriented software architecture.
+\newblock In {\em Proceedings of the 8th International Workshop on
+  Context-Oriented Programming}, COP'16, pages 7--12, New York, NY, USA, 2016.
+  ACM.
+
 \bibitem{SALVANESCHI20121801}
 G.~Salvaneschi, C.~Ghezzi, and M.~Pradella.
 \newblock Context-oriented programming: A software engineering perspective.
@@ -60,9 +67,5 @@ G.~Salvaneschi, C.~Ghezzi, and M.~Pradella.
 \bibitem{strategypattern}
 Wikipedia.
 \newblock Strategy pattern --- wikipedia{,} the free encyclopedia, 2017.
-
-\bibitem{pervasivecomputing}
-Wikipedia.
-\newblock Ubiquitous computing --- wikipedia{,} the free encyclopedia, 2017.
 
 \end{thebibliography}

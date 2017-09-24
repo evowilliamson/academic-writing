@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.22)  24 SEP 2017 18:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.22)  24 SEP 2017 20:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -288,112 +288,93 @@ Overfull \hbox (10.79999pt too wide) in paragraph at lines 15--15
  []
 
 
-Overfull \hbox (7.63046pt too wide) in paragraph at lines 17--20
-\T1/aer/m/n/9 pro-gram-ming lan-guages of-fer con-structs to im-ple-ment contex
-t-
- []
-
-
-Overfull \hbox (1.61597pt too wide) in paragraph at lines 17--20
-\T1/aer/m/n/9 dependent be-hav-ior, like con-di-tional branches us-ing if/switc
-h
- []
-
-
-Overfull \hbox (1.038pt too wide) in paragraph at lines 17--20
-\T1/aer/m/n/9 like vari-ables, classes, and func-tions con-sti-tute the con-str
-ucts
- []
-
-
-Overfull \hbox (6.4774pt too wide) in paragraph at lines 37--37
+Overfull \hbox (6.4774pt too wide) in paragraph at lines 34--34
 []\secfnt CONTEXT-ORIENTED PRO-GRAM-MING 
  []
 
-
-Underfull \hbox (badness 1394) in paragraph at lines 39--42
-\T1/aer/m/n/9 Pro-gram-ming pro-motes the mod-u-lar-iza-tion of context-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Overfull \hbox (4.23418pt too wide) in paragraph at lines 63--64
+Overfull \hbox (4.23418pt too wide) in paragraph at lines 60--61
 \T1/aer/m/n/9 grained in-for-ma-tion classes like "low", "medium", "high". 
  []
 
 
-Overfull \hbox (4.3526pt too wide) in paragraph at lines 73--74
+Overfull \hbox (4.3526pt too wide) in paragraph at lines 70--71
 \T1/aer/m/n/9 Context-Oriented Pro-gram-ming lan-guages, which groups par-
  []
 
-[2] <layers2.png, id=15, 715.17188pt x 639.89063pt>
+<layers2.png, id=11, 715.17188pt x 639.89063pt>
 File: layers2.png Graphic file (type png)
  <use layers2.png>
-Package pdftex.def Info: layers2.png used on input line 85.
+Package pdftex.def Info: layers2.png used on input line 81.
 (pdftex.def)             Requested size: 256.0748pt x 229.12042pt.
 
-Overfull \hbox (16.0748pt too wide) in paragraph at lines 85--86
+Overfull \hbox (16.0748pt too wide) in paragraph at lines 81--82
  [][] 
  []
 
 
-Underfull \hbox (badness 4391) in paragraph at lines 86--86
+Underfull \hbox (badness 4391) in paragraph at lines 82--82
 []\T1/aer/bx/n/9 Figure 1: Lay-ers, be-hav-ioral vari-a-tions and
  []
 
-[3 <./layers2.png (PNG copy)>]
-<dynamic_activation2.png, id=21, 715.92468pt x 395.22656pt>
+[2] <dynamic_activation2.png, id=16, 715.92468pt x 395.22656pt>
 File: dynamic_activation2.png Graphic file (type png)
 
 <use dynamic_activation2.png>
-Package pdftex.def Info: dynamic_activation2.png used on input line 112.
+Package pdftex.def Info: dynamic_activation2.png used on input line 103.
 (pdftex.def)             Requested size: 241.84842pt x 133.50684pt.
 
-Overfull \hbox (1.84842pt too wide) in paragraph at lines 112--113
+Overfull \hbox (1.84842pt too wide) in paragraph at lines 103--104
  [][] 
  []
 
+[3 <./layers2.png (PNG copy)> <./dynamic_activation2.png (PNG copy)>]
 <per_object_activation2.png, id=22, 709.14937pt x 252.19218pt>
 File: per_object_activation2.png Graphic file (type png)
 
 <use per_object_activation2.png>
-Package pdftex.def Info: per_object_activation2.png used on input line 129.
+Package pdftex.def Info: per_object_activation2.png used on input line 124.
 (pdftex.def)             Requested size: 241.84842pt x 86.00587pt.
 
-Overfull \hbox (1.84842pt too wide) in paragraph at lines 129--130
+Overfull \hbox (1.84842pt too wide) in paragraph at lines 124--125
  [][] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (2.00522pt too wide) in paragraph at lines 131--132
+\T1/aer/m/n/9 sources are avail-able that dis-cuss Context-Oriented Pro-gram-
+ []
 
 
-(./sigproc-sp.bbl [4 <./dynamic_activation2.png (PNG copy)> <./per_object_activ
-ation2.png (PNG copy)>]) [5
+Overfull \hbox (6.63112pt too wide) in paragraph at lines 135--136
+\T1/aer/m/n/9 The pur-pose of this pa-per was to in-tro-duce novices to Context
+-
+ []
 
-] (./sigproc-sp.aux) ) 
+(./sigproc-sp.bbl [4 <./per_object_activation2.png (PNG copy)>]) [5
+
+]
+(./sigproc-sp.aux) ) 
 Here is how much of TeX's memory you used:
  2876 strings out of 493029
- 36670 string characters out of 6136234
- 102800 words of memory out of 5000000
+ 36681 string characters out of 6136234
+ 103800 words of memory out of 5000000
  6338 multiletter control sequences out of 15000+600000
  48451 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,28p,1141b,242s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.en
-c}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
-s/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sigproc-sp.pdf (5 pages, 374284 bytes).
+ 41i,10n,28p,1137b,242s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
+utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on sigproc-sp.pdf (5 pages, 375026 bytes).
 PDF statistics:
  56 PDF objects out of 1000 (max. 8388607)
  37 compressed objects within 1 object stream
