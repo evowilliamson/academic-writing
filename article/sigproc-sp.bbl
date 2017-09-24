@@ -52,6 +52,11 @@ G.~Kiczales, J.~Lamping, A.~Mendhekar, C.~Maeda, C.~Lopes, J.-M. Loingtier, and
 \newblock {\em Aspect-oriented programming}, pages 220--242.
 \newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 1997.
 
+\bibitem{SALVANESCHI20121801}
+G.~Salvaneschi, C.~Ghezzi, and M.~Pradella.
+\newblock Context-oriented programming: A software engineering perspective.
+\newblock {\em Journal of Systems and Software}, 85(8):1801 -- 1817, 2012.
+
 \bibitem{strategypattern}
 Wikipedia.
 \newblock Strategy pattern --- wikipedia{,} the free encyclopedia, 2017.
