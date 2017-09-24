@@ -28,11 +28,11 @@ Many applications present behavior that is determined by the context in which it
 
 For example, battery level of a tablet or a smart phone on which an application (Operating System in this case) runs is a context, which probably impacts many behavioral aspects of that applications. It will not only have affect on the brightness of the screen, but it might also influence the way the Operating System prioritizes running threads, and perhaps result in the preventive hibernation of the system.
 
-In order to include context-dependent behavior in applications using most modern programming languages, one option available is to use the Strategy Design Pattern \cite{strategypattern} to abstract the context-dependent behavior into separate classes and decide at runtime-level which context-dependent behavior (strategy) to use. Even worse would be the usage of conditional statements to find out the context in which a certain program is running, and as a result, not adhering to one of the concepts of Object-Oriented Programming: To avoid conditional statements to determine polymorphic behavior. Both options are suboptimal as they result in cluttered code which is difficult to reuse and to understand and makes maintenance of the code a very cumbersome activity.
+In order to include context-dependent behavior in applications using most modern programming languages, one option available is to use the Strategy Design Pattern \cite{Costanza:2005:LCC:1146841.1146842,strategypattern} to abstract the context-dependent behavior into separate classes and decide at runtime-level which context-dependent behavior (strategy) to use. Even worse would be the usage of conditional statements to find out the context in which a certain program is running, and as a result, not adhering to one of the concepts of Object-Oriented Programming: To avoid conditional statements to determine polymorphic behavior. Both options are suboptimal as they result in cluttered code which is difficult to reuse and to understand and makes maintenance of the code a very cumbersome activity.
 
 So, behavioral variation is not implemented by a sole object, rather it is spread over a group of cooperating objects. It is called a crosscutting concern \cite{kiczalesetallaop} and this is a functionality that is dispersed over several cooperating objects. Plain old Object-Oriented Programming languages don't have constructs that allow for modularization and composition of crosscutting concerns, they lack first-class constructs. A first-class construct \cite{Keays:2003:CP:940923.940926} is a construct which is an element of a language, like a class or a method in Java. The lack of first-class constructs in regular Object-Oriented Programming languages to support the development of context-aware applications, leaves the developer of those applications with the need to implement necessary \textit{boiler-plate code}. What is needed, is a type of language that incorporates those constructs; which allow a developer to focus more on the implementation of business use-cases and less on inventing the wheel of "context determination, modularization and activation" over and over again. 
 
-Paragraph \ref{sec:context} will zoom into the concept of "Context", which contains basic Context-Oriented Programming jargon, which will be referred to in subsequent paragraphs. Behavioral variations is introduced in paragraph \ref{sec:behavioral_variations}, whilst paragraph \ref{sec:layers} explains how to define behavioral variations in a class by using partial method definitions. Paragraph \ref{sec:layer_activation} lists the types of activations that exist in order to activate behavioral variations. 
+Paragraph \ref{sec:context} will zoom into the concept of "Context", which contains basic Context-Oriented Programming jargon, which will be referred to in subsequent paragraphs. Behavioral variations is introduced in paragraph \ref{sec:behavioral_variations}, whilst paragraph \ref{sec:layers} explains how to define behavioral variations in a class by using partial method definitions. Paragraph \ref{sec:layer_activation_scoping} lists the types of activations that exist in order to activate behavioral variations. 
 
 \section{Context-Oriented Programming}
 \label{cop}
@@ -71,6 +71,15 @@ Context-Oriented Programming languages have first-class constructs that support 
 \label{sec:layers}
 \textit{Layers} group contextual-dependent behavioral variations as first-class entities that can be explicitly referred to in a program at runtime. Layers are first-class entities in most Context-Oriented Programming languages, which groups partial definitions and can be stored in variables and passed to methods. Several parts of the application can have access to the same layers and determine the exact changes in behavior that have to be done. In case of layers, the first-class entity that implements this functionality is a layered method. This method consists of a base, principle method definition, extended with at least one extra partial definition. The root layer that is always present, that represents the base definition, defines the context-independent behavior of the application.
 
+The code snippets like the one in figure \ref{fig:layers} and in other figures in this paper, are based on the ContextJ implementation (Java-based) \cite{Appeltauer:2009:IDC:1562112.1562117}, but are by no means meant to be compile-ready as they only serve an explanatory goal. 
+
+The use-case that is applicable is an application that should display client information with additional account and/or contact information, dependent on the kind of device that is used. Users that connect to the application through a smart phone, have less available real estate, so only basic client and account information is shown, whereas users that use a regular browser will have more space to show additional contact information, along with the client and account information. 
+
+In figure \ref{fig:layers}, the base behavior of the ClientRepository (with no active layers), is to only retrieve the client information. The base definition of the get-method first checks the cache for the presence of the object that is associated with the id that is passed in. If found, it returns that object, if not found, it will get the object from the underlying data store, through the DAO-object (\textit{Data Access Object}). 
+
+The get-method is partially redefined in two layers that are defined in the same class by making use of the first-class construct "layer". In case the mobile layer is active, first the base functionality of the get-method will be invoked by the proceed-call. After the proceed-call has retrieved the object, the partial definition will make a call to the DAO object in order to retrieve the account information that is related with the client. Before returning the object to the caller, the partial definition will make sure that the cache is updated with the newly retrieved information. 
+
+
 \begin{figure}[H]
 \centering
 \fbox{\includegraphics[width=85mm]{layers.png}}
@@ -78,34 +87,37 @@ Context-Oriented Programming languages have first-class constructs that support 
 \label{fig:layers}
 \end{figure}
 
-The code snippets like the above and in other figures in this paper, are based on the ContextJ implementation (Java-based) \cite{Appeltauer:2009:IDC:1562112.1562117}, but are by no means meant to be compile-ready as they only serve an explanatory goal. In the above figure, the base behavior of the ClientRepository is to only retrieve the client information. The base definition of the get-method first checks the cache for the presence of the object that is associated with the id that is passed in. If found, it returns that object, if not found, it will get the object from the underlying data store, through the DAO-object (\textit{Data Access Object}). 
+So, based on the use-case, account and/or contact information can be \textit{lazily loaded}, by activating the corresponding layers, achieving a simple context-dependent and performance-wise efficient solution. Of course, the above use-case and sample implementation is a very simplified abstraction of what could be a real solution, depending on defined functional and non-functional requirements.
 
-The get-method is partially redefined in two layers that are defined in the same class by making use of the first-class construct "layer". In case the account layer is active, first the base functionality of the get-method will be invoked by the proceed-call. After the proceed-call has retrieved the object, the partial definition will make a call to the DAO object in order to retrieve the account information that is related with the client. Before returning the object to the caller, the partial definition will make sure that the cache is updated with the newly retrieved information. 
+The \textit{layer modularization technique }that has been used to allocate layers in figure \ref{fig:layers}, is called the \textit{layers-in-class} style allocation. On a per-class basis, layers are defined. This means that layer definitions are \textit{scattered} over all the classes to which a certain behavioral variation should be applied. When there exist too many classes to which a certain behavioral variation must be applied, there is another technique to avoid the aforementioned problem, which is called \textit{class-in-layer} allocation of layers. The most optimal choice depends on the number of behavioral variations and affected classes.
+\newpage
 
-So, based on the use-case, account and/or contact information can be \textit{lazily loaded}, by activating the corresponding layers, achieving a simple context-dependent and performance-wise efficient solution. Of course, the above use-case and sample implementation is a very simplified abstraction of what could be a real solution.
-
-The \textit{layer modularization technique }that has been used to allocate layers in figure \ref{fig:layers}, is called the \textit{layers-in-class} style allocation. On a per-class basis, layers are defined. This means that layer definitions are scattered over all the classes to which a certain behavioral variation should be applied. When there exist too many classes to which a certain behavioral variation must be applied, there is another technique to avoid the aforementioned problem, which is called \textit{class-in-layer} allocation of layers. The most optimal choice depends on the number of behavioral variations and affected classes.
-
-\subsection{Layer activation}
-\label{sec:layer_activation}
-The \textit{raison d'etre} of Context-Oriented Programming languages is the need to dynamically adapt to different behavioral variations in an elegant and modular way, so this paradigm must provide for regularly changing application behavior. The concept of changing  application behavior is implemented by activating and deactivating layers at a certain point in time during the execution of the application. \textit{Layer activation} is achieved by language constructs that ensure that layers are added at runtime, such that certain partial method definitions have an influence on the actual behavior of an application. 
+\subsection{Layer activation and scoping}
+\label{sec:layer_activation_scoping}
+The \textit{raison d'etre} of Context-Oriented Programming languages is the need to dynamically adapt to different behavioral variations in an elegant and modular way, so this paradigm must provide for regularly changing application behavior. The concept of changing  application behavior is implemented by activating and deactivating layers at a certain point in time during the execution of the application. \textit{Layer activation} is achieved by language constructs that ensure that layers are added at runtime, such that certain partial method definitions have an influence on the actual behavior of an application \cite{Kamina:2014:CSE:2577080.2579816}. 
 
 By default, only the root layer is active at runtime. So only the base definition associated with the root layer will directly influence the behavior of the application. Other layers can be activated and deactivated by using specific keywords that have been added to the programming language or the extension. 
 
-\newpage
 The following subparagraphs will shed a light on the different activation mechanisms that have been described in implementation proposals or are available in implementations. It needs to be said that regarding this subject, there is no consensus among either the Context-Oriented Programming language that have been developed or many specifications for Context-Oriented Programming languages that have been published throughout the years. Layer activation and deactivation mechanisms are a complex matter and the most suited approach depends a lot on the architecture and the proposed use-case of the Context-Oriented Programming language.
 
 \subsubsection{Dynamically scoped activation}
 \label{dynamically_scoped_activation}
-Most Context-Oriented Programming languages support the use of \textit{dynamically scoped activation}. A series of layers can be activated by the use of the keyword "with". Multiple uses of with-statements in nested calls will add the specified layer to the configuration of layers that are active at that point. 
+Most Context-Oriented Programming languages support the use of \textit{dynamically scoped activation}. A series of layers can be activated by the use of the keyword "with". Multiple uses of with-statements in nested calls will add the specified layer to the configuration of layers that are active at that point. The scope of a set of certain active layers is determined by the with-block. At the moment that a with-block terminates, the scope expires and affected layers are removed (\textit{implicit deactivation}) from the configuration of active layers. 
 
-\textit{Scoping} of layer activation and deactivation ensures that
-the behavioral variations are only effective for well-defined
-parts of a program, and for well-defined durations.
+\begin{figure}[H]
+\centering
+\fbox{\includegraphics[width=85mm]{dynamic_activation.png}}
+\caption{Dynamically scoped activation}
+\label{fig:dynamically_scoped_activation}
+\end{figure}
+The concept of \textit{dynamically scoped activation}, or \textit{direct layer activation}, is depicted in figure \ref{fig:dynamically_scoped_activation}. When the SmartPhone class is constructed, the appropriate layer is provided as part of one of the constructor parameters. In the case of a smart phone, the most probable behavior that would be linked with the display properties of the device is to be as efficient as possible with the amount of information that is provided, thus choosing the mobileLayer. When the call is made to the ClientRepository to retrieve the client information, the appropriate logic that belongs to the mobileLayer is executed after the base definition has been applied. As a result, only client and account information is displayed on the SmartPhone. 
 
-ref no 6.!!!1 relationship between activation and beh var.
+After the with-block has terminated, the mobileLayer layer is out-of-scope, and subsequent similar calls to the ClientRepository to retrieve the client information, will result in the retrieval of only the basic client information, without account or contact information.
 
-dispatch ref no. 5 and ref no. 1
+
+
+
+
 
 \bibliographystyle{abbrv}
 \bibliography{sigproc}

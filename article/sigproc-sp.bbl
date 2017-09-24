@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{Abowd:1999:TBU:647985.743843}
 G.~D. Abowd, A.~K. Dey, P.~J. Brown, N.~Davies, M.~Smith, and P.~Steggles.
@@ -25,6 +25,19 @@ P.~Costanza.
 \newblock Context-oriented programming in contextl: State of the art.
 \newblock In {\em Celebrating the 50th Anniversary of Lisp}, LISP50, pages
   4:1--4:5, New York, NY, USA, 2008. ACM.
+
+\bibitem{Costanza:2005:LCC:1146841.1146842}
+P.~Costanza and R.~Hirschfeld.
+\newblock Language constructs for context-oriented programming: An overview of
+  contextl.
+\newblock In {\em Proceedings of the 2005 Symposium on Dynamic Languages}, DLS
+  '05, pages 1--10, New York, NY, USA, 2005. ACM.
+
+\bibitem{Kamina:2014:CSE:2577080.2579816}
+T.~Kamina, T.~Aotani, H.~Masuhara, and T.~Tamai.
+\newblock Context-oriented software engineering: A modularity vision.
+\newblock In {\em Proceedings of the 13th International Conference on
+  Modularity}, MODULARITY '14, pages 85--98, New York, NY, USA, 2014. ACM.
 
 \bibitem{Keays:2003:CP:940923.940926}
 R.~Keays and A.~Rakotonirainy.

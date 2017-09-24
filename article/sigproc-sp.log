@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.22)  24 SEP 2017 11:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.22)  24 SEP 2017 12:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -331,43 +331,56 @@ Overfull \hbox (4.3526pt too wide) in paragraph at lines 72--73
 \T1/aer/m/n/9 Context-Oriented Pro-gram-ming lan-guages, which groups par-
  []
 
-<layers.png, id=11, 907.13907pt x 524.71031pt>
+[2] <layers.png, id=15, 647.41875pt x 582.67688pt>
 File: layers.png Graphic file (type png)
  <use layers.png>
-Package pdftex.def Info: layers.png used on input line 76.
-(pdftex.def)             Requested size: 241.84842pt x 139.88823pt.
+Package pdftex.def Info: layers.png used on input line 85.
+(pdftex.def)             Requested size: 241.84842pt x 217.65865pt.
 
-Overfull \hbox (8.24841pt too wide) in paragraph at lines 76--77
+Overfull \hbox (8.24841pt too wide) in paragraph at lines 85--86
  [][] 
  []
 
 
-Underfull \hbox (badness 4391) in paragraph at lines 77--77
+Underfull \hbox (badness 4391) in paragraph at lines 86--86
 []\T1/aer/bx/n/9 Figure 1: Lay-ers, be-hav-ioral vari-a-tions and
  []
 
-[2 <./layers.png (PNG copy)>] (./sigproc-sp.bbl) [3] (./sigproc-sp.aux) ) 
+<dynamic_activation.png, id=16, 673.76718pt x 310.15875pt>
+File: dynamic_activation.png Graphic file (type png)
+
+<use dynamic_activation.png>
+Package pdftex.def Info: dynamic_activation.png used on input line 109.
+(pdftex.def)             Requested size: 241.84842pt x 111.3305pt.
+
+Overfull \hbox (8.24841pt too wide) in paragraph at lines 109--110
+ [][] 
+ []
+
+[3 <./layers.png (PNG copy)> <./dynamic_activation.png (PNG copy)>]
+(./sigproc-sp.bbl) [4
+
+] (./sigproc-sp.aux) ) 
 Here is how much of TeX's memory you used:
- 2857 strings out of 493029
- 36140 string characters out of 6136234
- 103733 words of memory out of 5000000
- 6321 multiletter control sequences out of 15000+600000
+ 2865 strings out of 493029
+ 36380 string characters out of 6136234
+ 103748 words of memory out of 5000000
+ 6328 multiletter control sequences out of 15000+600000
  48451 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,10n,28p,1141b,242s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/
-share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic
-/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sigproc-sp.pdf (3 pages, 212223 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.en
+c}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
+s/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on sigproc-sp.pdf (4 pages, 251188 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 52 PDF objects out of 1000 (max. 8388607)
+ 35 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
