@@ -47,8 +47,6 @@ Roger Keays, Andry Rakotonirainy
 Cited 17 times
 Good explanation of basic aspects
 
-to be printed:
-
 8.
 http://dl.acm.org.ezproxy.elib10.ub.unimaas.nl/citation.cfm?id=2579816&CFID=984255076&CFTOKEN=26238400
 Context-Oriented Software Engineering: A Modularity Vision
