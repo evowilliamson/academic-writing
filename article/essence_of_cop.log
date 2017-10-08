@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.22)  8 OCT 2017 17:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.22)  8 OCT 2017 19:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -307,9 +307,13 @@ Overfull \hbox (6.4774pt too wide) in paragraph at lines 38--38
 
 
 ]
-Overfull \hbox (2.04968pt too wide) in paragraph at lines 58--59
-\T1/aer/m/n/9 tions that re-sponds with pre-de-fined be-hav-ior on a per-reques
-t
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+\T1/aer/m/n/9 environmental-dependent and system-
+ []
+
+
+Overfull \hbox (2.74422pt too wide) in paragraph at lines 67--68
+\T1/aer/m/n/9 are im-ple-men-ta-tions of Context-Oriented Pro-gram-ming
  []
 
 
@@ -318,11 +322,11 @@ Overfull \hbox (5.50595pt too wide) in paragraph at lines 76--77
 -tions as first-
  []
 
-[2] <layers_toy.png, id=15, 476.53032pt x 356.0803pt>
+[2] <layers_toy.png, id=15, 475.02469pt x 355.3275pt>
 File: layers_toy.png Graphic file (type png)
  <use layers_toy.png>
 Package pdftex.def Info: layers_toy.png used on input line 86.
-(pdftex.def)             Requested size: 241.84842pt x 180.71835pt.
+(pdftex.def)             Requested size: 241.84842pt x 180.90556pt.
 
 Overfull \hbox (1.84842pt too wide) in paragraph at lines 86--87
  [][] 
@@ -333,63 +337,54 @@ Underfull \hbox (badness 4391) in paragraph at lines 87--87
 []\T1/aer/bx/n/9 Figure 1: Lay-ers, be-hav-ioral vari-a-tions and
  []
 
-<dynamic_activation_toy.png, id=16, 478.78876pt x 357.58594pt>
+<dynamic_activation_toy.png, id=16, 478.78876pt x 356.83313pt>
 File: dynamic_activation_toy.png Graphic file (type png)
 
 <use dynamic_activation_toy.png>
 Package pdftex.def Info: dynamic_activation_toy.png used on input line 108.
-(pdftex.def)             Requested size: 241.84842pt x 180.62584pt.
+(pdftex.def)             Requested size: 241.84842pt x 180.24557pt.
 
 Overfull \hbox (1.84842pt too wide) in paragraph at lines 108--109
  [][] 
  []
 
 [3 <./layers_toy.png (PNG copy)> <./dynamic_activation_toy.png (PNG copy)>]
-<per_object_activation2.png, id=22, 709.14937pt x 252.19218pt>
-File: per_object_activation2.png Graphic file (type png)
+<per_object_activation_toy.png, id=22, 478.03593pt x 197.98969pt>
+File: per_object_activation_toy.png Graphic file (type png)
 
-<use per_object_activation2.png>
-Package pdftex.def Info: per_object_activation2.png used on input line 127.
-(pdftex.def)             Requested size: 241.84842pt x 86.00587pt.
+<use per_object_activation_toy.png>
+Package pdftex.def Info: per_object_activation_toy.png used on input line 127.
+(pdftex.def)             Requested size: 241.84842pt x 100.16676pt.
 
 Overfull \hbox (1.84842pt too wide) in paragraph at lines 127--128
  [][] 
  []
 
+(./essence_of_cop.bbl [4 <./per_object_activation_toy.png (PNG copy)>])
+[5
 
-Overfull \hbox (2.00522pt too wide) in paragraph at lines 134--135
-\T1/aer/m/n/9 sources are avail-able that dis-cuss Context-Oriented Pro-gram-
- []
-
-
-Overfull \hbox (6.63112pt too wide) in paragraph at lines 138--139
-\T1/aer/m/n/9 The pur-pose of this pa-per was to in-tro-duce novices to Context
--
- []
-
-(./essence_of_cop.bbl) [4 <./per_object_activation2.png (PNG copy)>]
-(./essence_of_cop.aux) ) 
+] (./essence_of_cop.aux) ) 
 Here is how much of TeX's memory you used:
- 2875 strings out of 493029
- 36736 string characters out of 6136234
- 103796 words of memory out of 5000000
- 6337 multiletter control sequences out of 15000+600000
+ 2874 strings out of 493029
+ 36730 string characters out of 6136234
+ 103788 words of memory out of 5000000
+ 6336 multiletter control sequences out of 15000+600000
  48451 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,10n,28p,1089b,242s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.
-enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf
--dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
-mes/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
->
-Output written on essence_of_cop.pdf (4 pages, 269649 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8
+r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/font
+s/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
+times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.p
+fb>
+Output written on essence_of_cop.pdf (5 pages, 243892 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 56 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
