@@ -1,0 +1,71 @@
+\begin{thebibliography}{10}
+
+\bibitem{Abowd:1999:TBU:647985.743843}
+G.~D. Abowd, A.~K. Dey, P.~J. Brown, N.~Davies, M.~Smith, and P.~Steggles.
+\newblock Towards a better understanding of context and context-awareness.
+\newblock In {\em Proceedings of the 1st International Symposium on Handheld
+  and Ubiquitous Computing}, HUC '99, pages 304--307, London, UK, UK, 1999.
+  Springer-Verlag.
+
+\bibitem{Appeltauer:2009:CCP:1562112.1562118}
+M.~Appeltauer, R.~Hirschfeld, M.~Haupt, J.~Lincke, and M.~Perscheid.
+\newblock A comparison of context-oriented programming languages.
+\newblock In {\em International Workshop on Context-Oriented Programming}, COP
+  '09, pages 6:1--6:6, New York, NY, USA, 2009. ACM.
+
+\bibitem{Appeltauer:2009:IDC:1562112.1562117}
+M.~Appeltauer, R.~Hirschfeld, and H.~Masuhara.
+\newblock Improving the development of context-dependent java applications with
+  contextj.
+\newblock In {\em International Workshop on Context-Oriented Programming}, COP
+  '09, pages 5:1--5:5, New York, NY, USA, 2009. ACM.
+
+\bibitem{Costanza:2008:CPC:1529966.1529970}
+P.~Costanza.
+\newblock Context-oriented programming in contextl: State of the art.
+\newblock In {\em Celebrating the 50th Anniversary of Lisp}, LISP50, pages
+  4:1--4:5, New York, NY, USA, 2008. ACM.
+
+\bibitem{Costanza:2005:LCC:1146841.1146842}
+P.~Costanza and R.~Hirschfeld.
+\newblock Language constructs for context-oriented programming: An overview of
+  contextl.
+\newblock In {\em Proceedings of the 2005 Symposium on Dynamic Languages}, DLS
+  '05, pages 1--10, New York, NY, USA, 2005. ACM.
+
+\bibitem{Kamina:2014:CSE:2577080.2579816}
+T.~Kamina, T.~Aotani, H.~Masuhara, and T.~Tamai.
+\newblock Context-oriented software engineering: A modularity vision.
+\newblock In {\em Proceedings of the 13th International Conference on
+  Modularity}, MODULARITY '14, pages 85--98, New York, NY, USA, 2014. ACM.
+
+\bibitem{Keays:2003:CP:940923.940926}
+R.~Keays and A.~Rakotonirainy.
+\newblock Context-oriented programming.
+\newblock In {\em Proceedings of the 3rd ACM International Workshop on Data
+  Engineering for Wireless and Mobile Access}, MobiDe '03, pages 9--16, New
+  York, NY, USA, 2003. ACM.
+
+\bibitem{kiczalesetallaop}
+G.~Kiczales, J.~Lamping, A.~Mendhekar, C.~Maeda, C.~Lopes, J.-M. Loingtier, and
+  J.~Irwin.
+\newblock {\em Aspect-oriented programming}, pages 220--242.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 1997.
+
+\bibitem{Mens:2016:CSA:2951965.2951971}
+K.~Mens, N.~Cardozo, and B.~Duhoux.
+\newblock A context-oriented software architecture.
+\newblock In {\em Proceedings of the 8th International Workshop on
+  Context-Oriented Programming}, COP'16, pages 7--12, New York, NY, USA, 2016.
+  ACM.
+
+\bibitem{SALVANESCHI20121801}
+G.~Salvaneschi, C.~Ghezzi, and M.~Pradella.
+\newblock Context-oriented programming: A software engineering perspective.
+\newblock {\em Journal of Systems and Software}, 85(8):1801 -- 1817, 2012.
+
+\bibitem{strategypattern}
+Wikipedia.
+\newblock Strategy pattern --- wikipedia{,} the free encyclopedia, 2017.
+
+\end{thebibliography}
