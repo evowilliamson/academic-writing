@@ -1,0 +1,10 @@
+made figures bigger
+changed title
+changed use case
+corrected english
+vaag...
+conclusion
+paragaph references in introduction
+introduction of use-case
+back tickss
+changed figures, no color and shading, except for indicating first-class constructs
