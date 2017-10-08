@@ -26,12 +26,10 @@ P.~Costanza.
 \newblock In {\em Celebrating the 50th Anniversary of Lisp}, LISP50, pages
   4:1--4:5, New York, NY, USA, 2008. ACM.
 
-\bibitem{Costanza:2005:LCC:1146841.1146842}
-P.~Costanza and R.~Hirschfeld.
-\newblock Language constructs for context-oriented programming: An overview of
-  contextl.
-\newblock In {\em Proceedings of the 2005 Symposium on Dynamic Languages}, DLS
-  '05, pages 1--10, New York, NY, USA, 2005. ACM.
+\bibitem{HirschfeldCostanzaNierstraszCOP}
+R.~Hirschfeld, P.~Costanza, and O.~Nierstrasz.
+\newblock Context-oriented programming.
+\newblock {\em Journal of Systems and Software}, 7(3):125 -- 151, 2008.
 
 \bibitem{Kamina:2014:CSE:2577080.2579816}
 T.~Kamina, T.~Aotani, H.~Masuhara, and T.~Tamai.
@@ -63,9 +61,5 @@ K.~Mens, N.~Cardozo, and B.~Duhoux.
 G.~Salvaneschi, C.~Ghezzi, and M.~Pradella.
 \newblock Context-oriented programming: A software engineering perspective.
 \newblock {\em Journal of Systems and Software}, 85(8):1801 -- 1817, 2012.
-
-\bibitem{strategypattern}
-Wikipedia.
-\newblock Strategy pattern --- wikipedia{,} the free encyclopedia, 2017.
 
 \end{thebibliography}

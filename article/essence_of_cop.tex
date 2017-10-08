@@ -33,6 +33,8 @@ The lack of aforementioned constructs in regular Object-Oriented Programming lan
 
 The next section will zoom into the concept of `Context`, which contains basic Context-Oriented Programming jargon. The concepts that are explained in this section will be referred to in subsequent paragraphs. The concept of behavioral variations is introduced and an explanation is given on how to define behavioral variations in a class by using partial method definitions and layers. Finally, an elaboration is given of several types of behavioral variation activations.
 
+In order to explain the concepts of Context-Oriented Programming in a more vivid way, a sample use-case will be considered where a screen handler dynamically adjusts its behavior depending of that status of the battery level of a smart phone. For example, in case the battery level (context) falls below a predefined level, the screen should be dimmed (behavioral variation) so that operation time of the smart phone can be extended.
+
 \section{Context-Oriented Programming}
 \label{cop}
 In the early 2000s several approaches have been presented to support the development of context-aware applications. These approaches mainly encompass software architectures and component-based design \cite{SALVANESCHI20121801}. In 2008 the Context-Oriented Programming paradigm was proposed \cite{HirschfeldCostanzaNierstraszCOP} as a complementary approach for supporting dynamic adaptation to behavioral variations. 
@@ -61,7 +63,7 @@ Behavioral variations, changes in response, depend on the context that is genera
 
 \begin{itemize}
 \item The definition does not specify whether the information should originate from outside of the system, the environment, but it also comes from other sources like the actors and the system itself.
-\item The granularity of abstraction is not enforced by the definition. Context can exist in the system, or can come to the system as fine-grained pieces of information, like indiscrete numerical temperature indications and can subsequently be transformed to more course-grained information classes like "low", "medium", "high". 
+\item The granularity of abstraction is not enforced by the definition. Context can exist in the system, or can come to the system as fine-grained pieces of information, like indiscrete numerical temperature indications and can subsequently be transformed to more course-grained information classes like `low`, `medium`, `high`. 
 \item The uniqueness of the context is not imposed. There exist implementations of Context-Oriented Programming languages that enable applications to share only a common context. Other implementations don't follow this model and allow several contexts to exist, which are used in different parts of the application \cite{Appeltauer:2009:CCP:1562112.1562118}
 \end{itemize}
 
@@ -75,20 +77,19 @@ Context-Oriented Programming languages have first-class constructs that support 
 
 The code snippets like the one in figure \ref{fig:layers} and in other figures in this paper, are based on the ContextJ implementation (Java-based) \cite{Appeltauer:2009:IDC:1562112.1562117}, but are by no means meant to be compile-ready as they only serve an explanatory goal. 
 
-The use-case that is applicable should display client information with additional account and/or contact information, dependent on the kind of device that is used. Users that connect to the application through a smart phone, have less available real estate, so only basic client and account information is shown, whereas users that use a regular browser will have more space to show additional contact information, along with the client and account information. 
+The use-case that is utilized in this paper is a fictitious screen handler and battery handler of a smart phone. This screen handler contains two layers that represent the modularization of behavioral variation with regards to the battery level context. The battery handler checks the level of the battery and sets the layer accordingly.
 
-In figure \ref{fig:layers}, the base behavior of the ClientRepository (with no active layers), is to only retrieve the client information. The base definition of the get-method first checks the cache for the presence of the object that is associated with the id that is passed in. If found, it returns that object, if not found, it will get the object from the underlying data store, through the DAO-object (\textit{Data Access Object}). 
-
-The get-method is partially redefined in two layers that are defined in the same class by making use of the first-class construct "layer". In case the mobile layer is active, first the base functionality of the get-method will be invoked by the proceed-call. After the proceed-call has retrieved the object, the partial definition will make a call to the DAO object in order to retrieve the account information that is related with the client. Before returning the object to the caller, the partial definition will make sure that the cache is updated with the newly retrieved information. 
+In figure \ref{fig:layers}, the base behavior (handle-method) of the ScreenHandler (with no active layers) is to only draw the screen as it is configured at that moment. In case a certain layer has been activated, the corresponding handle-method will be executed. For example, in case the battery handler has detected that the battery is below a certain level, it activates the layer `LowBattery`. The screen handler will execute the according handle-method (within the LowBattery layer). The proceed-method inside the handle-method will execute the context-independent behavior.
+ 
 \begin{figure}[H]
 \centering
-\includegraphics[width=90mm]{layers_toy.png}
+\includegraphics[width=85mm]{layers_toy.png}
 \caption{Layers, behavioral variations and base/partial definition}
 \label{fig:layers}
 \end{figure}
-So, based on the use-case, account and/or contact information can be \textit{lazily loaded}, by activating the corresponding layers, achieving a simple context-dependent and performance-wise efficient solution. Of course, the above use-case and sample implementation is a very simplified abstraction of what could be a real solution, depending on defined functional and non-functional requirements.
+Of course, the above use-case and sample implementation is a very simplified abstraction of what could be a real solution, depending on defined functional and non-functional requirements.
 
-The \textit{layer modularization technique }that has been used to allocate layers in figure \ref{fig:layers}, is called the \textit{layers-in-class} style allocation. On a per-class basis, layers are defined. This means that layer definitions are \textit{scattered} over all the classes to which a certain behavioral variation should be applied. When there exist too many classes to which a certain behavioral variation must be applied, there is another technique to avoid the aforementioned problem, which is called \textit{class-in-layer} allocation of layers. The most optimal choice depends on the number of behavioral variations and classes.
+The \textit{layer modularization technique }that has been used to allocate layers in figure \ref{fig:layers}, is called the \textit{layers-in-class} style allocation. On a per-class basis, layers are defined. This means that layer definitions are \textit{scattered} over all the classes to which a certain behavioral variation should be applied. When there are too many classes to which a certain behavioral variation must be applied, there is another technique to avoid the aforementioned problem, which is called \textit{class-in-layer} allocation of layers. The most optimal choice depends on the number of behavioral variations and classes.
 
 \subsection{Layer activation and scoping}
 \label{sec:layer_activation_scoping}
@@ -100,18 +101,16 @@ The following subparagraphs will shed a light on the different activation mechan
 
 \subsubsection{Dynamically scoped activation}
 \label{dynamically_scoped_activation}
-Most Context-Oriented Programming languages support the use of \textit{dynamically scoped activation}. A series of layers can be activated by the use of the keyword "with". Multiple uses of with-statements in nested calls will add the specified layer to the configuration of layers that are active at that point. The scope of a set of certain active layers is determined by the with-block. At the moment that a with-block terminates, the scope expires and affected layers are removed (\textit{implicit deactivation}) from the configuration of active layers. 
+Most Context-Oriented Programming languages support the use of \textit{dynamically scoped activation}. A series of layers can be activated by the use of the keyword `with`. Multiple uses of with-statements in nested calls will add the specified layer to the configuration of layers that are active at that point. The scope of a set of certain active layers is determined by the with-block. At the moment that a with-block terminates, the scope expires and affected layers are removed (\textit{implicit deactivation}) from the configuration of active layers. 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=85mm]{dynamic_activation2.png}
+\includegraphics[width=85mm]{dynamic_activation_toy.png}
 \caption{Dynamically scoped activation}
 \label{fig:dynamically_scoped_activation}
 \end{figure}
 
-The concept of \textit{dynamically scoped activation}, or \textit{direct layer activation}, is depicted in figure \ref{fig:dynamically_scoped_activation}. When the SmartPhone class is constructed, the appropriate layer is provided as part of one of the constructor parameters. In the case of a smart phone, the most probable behavior that would be linked with the display properties of the device is to be as efficient as possible with the amount of information that is provided, thus choosing the mobileLayer. When the call is made to the ClientRepository to retrieve the client information, the appropriate logic that belongs to the mobileLayer is executed after the base definition has been applied. As a result, only client and account information is displayed on the SmartPhone. 
-
-After the with-block has terminated, the mobileLayer layer is out-of-scope, and subsequent similar calls to the Client-Repository to retrieve the client information, will result in the retrieval of only the basic client information, without account or contact information.
+The concept of \textit{dynamically scoped activation}, or \textit{direct layer activation}, is depicted in figure \ref{fig:dynamically_scoped_activation}. In case the call to the low-level driver detects a low battery level, the according layer is set by the `with` statement. All classes that use this layer will then be affected by this change in context and these classes will activate their behavioral variation dynamically. In this example, the screen handle will dim the screen before proceeding with the execution of the context-independent behavior.
 
 \subsubsection{Indefinite activation}
 \label{indefinite_activation}
@@ -121,7 +120,7 @@ A variation to indefinite activation, is implicit activation. Like, indefinite a
 
 \subsubsection{Per-object activation}
 \label{per_object_activation}
-This type of activation allows configuration of active layers to be performed on single instances of classes. It can be used as an "add-on" and usually it is applied in combination with dynamically scoped activation. In cases where, on top of applying a  globally scoped activation of behavior, it is also necessary to apply a certain behavioral variation on a small subset of instances of classes, explicit setting the appropriate layer on the instance-level can be done \cite{SALVANESCHI20121801}. Figure \ref{fig:per_object_activation} illustrates the concept of per-object activation.
+This type of activation allows configuration of active layers to be performed on single instances of classes. It can be used as an `add-on` and usually it is applied in combination with dynamically scoped activation. In cases where, on top of applying a  globally scoped activation of behavior, it is also necessary to apply a certain behavioral variation on a small subset of instances of classes, explicit setting the appropriate layer on the instance-level can be done \cite{SALVANESCHI20121801}. Figure \ref{fig:per_object_activation} illustrates the concept of per-object activation.
 
 \begin{figure}[H]
 \centering
